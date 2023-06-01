@@ -7,3 +7,8 @@ test("wrapping from z to a", () => {
 test("Works with different cases", () => {
     expect(caeserCipher("abcdefghi", 6)).toBe("ghijklmno")
 });
+
+test("Works with punctuation", () => {
+    expect(caeserCipher("abcdefghi!@#", 6)).toBe("ghijklmno!@#")
+});
+
